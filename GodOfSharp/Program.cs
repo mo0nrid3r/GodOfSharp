@@ -4,12 +4,14 @@ using GodOfSharp.Iterator;
 using GodOfSharp.ObjectInitializer;
 using GodOfSharp.ObjectType;
 using GodOfSharp.Parallel;
+using GodOfSharp.Tasks;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Helpers;
 
 namespace GodOfSharp
 {
@@ -30,10 +32,12 @@ namespace GodOfSharp
             //ObjectInit.Process();
             //Deadlock.Process();
             //Non-refactored
-            
-            
-            AssignIncrement.Process();
-            AssignIncrement.HowMuch();
+            //var e = Crypto.HashPassword("4qb4XgZDRL3zRZJ4");
+            //Console.WriteLine(e);
+            //AssignIncrement.Process();
+            //AssignIncrement.HowMuch();
+            //AsyncAwait.Process();
+            var s = new DateTime(2015, 5, 5).ToShortDateString();
             sw.Stop();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Elapsed time: " + sw.Elapsed.TotalSeconds);
